@@ -1,0 +1,27 @@
+Para probar en Visual Studio Code, instalar el plugin 'Rest Client' (de Huachao Mao).
+Para eso, apretar F1, escribir 'install extensions' y buscar rest-client (el de Huachao Mao)
+Luego, seleccionar la(s) línea(s) de la petición y apretar Ctrl+Alt+R.
+
+
+
+http://localhost:3000/hoteles
+
+GET http://localhost:3000/hoteles/1
+
+POST http://localhost:3000/hoteles
+content-type: application/json
+
+{
+    "nombre": "Bourbon",
+    "direccion": "Luque"
+}
+
+
+PUT http://localhost:3000/hoteles/6
+content-type: application/json
+
+{
+    "imagenUrl": "prueba de PUT"
+}
+
+
